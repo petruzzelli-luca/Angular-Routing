@@ -6,3 +6,4 @@ export const routes: Routes = [
   { path: 'animals', component: AnimalComponent },
   { path: 'fruits', component: FruitsComponent }
 ];
+
