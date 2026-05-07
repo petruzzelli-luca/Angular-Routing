@@ -10,16 +10,6 @@ import { join } from 'node:path';
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
 const app = express();
-app.set('trust proxy', 1);
-
-// CORS configuration for GitHub Codespaces
-app.use((req, res, next) => {
-  // Allow x-forwarded-* headers from proxy
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, x-forwarded-host, x-forwarded-proto, x-forwarded-for');
-  next();
-});
-
 const angularApp = new AngularNodeAppEngine();
 
 /**

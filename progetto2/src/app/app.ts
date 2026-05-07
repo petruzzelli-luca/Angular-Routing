@@ -7,10 +7,10 @@ import { FooComponent } from './foo/foo';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FooComponent,RouterModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  imports: [FooComponent,RouterModule],
+  templateUrl: './app.html',
+  styleUrl: './app.css',
 })
-export class AppComponent {
+export class App {
  
 }
