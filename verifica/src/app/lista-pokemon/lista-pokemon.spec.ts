@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Generic } from './generic';
+import { ListaPokemon } from './lista-pokemon';
 
-describe('Generic', () => {
-  let component: Generic;
-  let fixture: ComponentFixture<Generic>;
+describe('ListaPokemon', () => {
+  let component: ListaPokemon;
+  let fixture: ComponentFixture<ListaPokemon>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Generic],
+      imports: [ListaPokemon],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Generic);
+    fixture = TestBed.createComponent(ListaPokemon);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
